@@ -25,6 +25,8 @@
 		412C21CC1DA9823500417AFE /* Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C21C41DA9823500417AFE /* Results.swift */; };
 		412C21CD1DA9823500417AFE /* Southwest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C21C51DA9823500417AFE /* Southwest.swift */; };
 		412C21CE1DA9823500417AFE /* Viewport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C21C61DA9823500417AFE /* Viewport.swift */; };
+		412C21D11DA985B900417AFE /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C21D01DA985B900417AFE /* Place.swift */; };
+		41590CEA1DAAC67500DCD030 /* EpisodeBackUpTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41590CE91DAAC67500DCD030 /* EpisodeBackUpTableViewCell.swift */; };
 		416703681DA6D8CC00EF152A /* Help.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 416703671DA6D8CC00EF152A /* Help.rtf */; };
 		523CAB981CB178890074B41E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523CAB971CB178890074B41E /* AppDelegate.swift */; };
 		523CAB9D1CB178890074B41E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 523CAB9B1CB178890074B41E /* Main.storyboard */; };
@@ -56,6 +58,8 @@
 		412C21C41DA9823500417AFE /* Results.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Results.swift; sourceTree = "<group>"; };
 		412C21C51DA9823500417AFE /* Southwest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Southwest.swift; sourceTree = "<group>"; };
 		412C21C61DA9823500417AFE /* Viewport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Viewport.swift; sourceTree = "<group>"; };
+		412C21D01DA985B900417AFE /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Place.swift; path = "duc blog/Place.swift"; sourceTree = SOURCE_ROOT; };
+		41590CE91DAAC67500DCD030 /* EpisodeBackUpTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EpisodeBackUpTableViewCell.swift; path = "duc blog/EpisodeBackUpTableViewCell.swift"; sourceTree = SOURCE_ROOT; };
 		416703671DA6D8CC00EF152A /* Help.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; name = Help.rtf; path = "duc blog/Help.rtf"; sourceTree = SOURCE_ROOT; };
 		523CAB941CB178890074B41E /* Duc Blog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Duc Blog.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		523CAB971CB178890074B41E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -81,12 +85,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		412C21CF1DA9852D00417AFE /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				412C21D01DA985B900417AFE /* Place.swift */,
+			);
+			name = Entity;
+			sourceTree = "<group>";
+		};
 		416703261DA6D71E00EF152A /* GooglePlace */ = {
 			isa = PBXGroup;
 			children = (
-				412C21AD1DA9815000417AFE /* DetailResult.swift */,
-				412C21AB1DA9813D00417AFE /* DetailPhotos.swift */,
-				412C21A91DA9812900417AFE /* DetailJson4Swift_Base.swift */,
+				412C21CF1DA9852D00417AFE /* Entity */,
 				416703481DA6D7D000EF152A /* Detail */,
 				416703371DA6D77900EF152A /* List */,
 			);
@@ -111,6 +121,9 @@
 		416703481DA6D7D000EF152A /* Detail */ = {
 			isa = PBXGroup;
 			children = (
+				412C21AD1DA9815000417AFE /* DetailResult.swift */,
+				412C21AB1DA9813D00417AFE /* DetailPhotos.swift */,
+				412C21A91DA9812900417AFE /* DetailJson4Swift_Base.swift */,
 				412C21AF1DA981EB00417AFE /* Address_components.swift */,
 				412C21B01DA981EB00417AFE /* Aspects.swift */,
 				412C21B11DA981EB00417AFE /* Close.swift */,
@@ -166,6 +179,7 @@
 			children = (
 				523CABAF1CB1847D0074B41E /* EpisodeTableViewCell.swift */,
 				523CAB9B1CB178890074B41E /* Main.storyboard */,
+				41590CE91DAAC67500DCD030 /* EpisodeBackUpTableViewCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -258,6 +272,7 @@
 				523CABB21CB1858A0074B41E /* NetworkService.swift in Sources */,
 				412C21CC1DA9823500417AFE /* Results.swift in Sources */,
 				412C21BA1DA981EB00417AFE /* Opening_hours.swift in Sources */,
+				412C21D11DA985B900417AFE /* Place.swift in Sources */,
 				412C21B81DA981EB00417AFE /* Close.swift in Sources */,
 				412C21AC1DA9813D00417AFE /* DetailPhotos.swift in Sources */,
 				412C21C91DA9823500417AFE /* Location.swift in Sources */,
@@ -266,6 +281,7 @@
 				412C21BB1DA981EB00417AFE /* Periods.swift in Sources */,
 				412C21C81DA9823500417AFE /* Json4Swift_Base.swift in Sources */,
 				523CABAE1CB184390074B41E /* EpisodesTableViewController.swift in Sources */,
+				41590CEA1DAAC67500DCD030 /* EpisodeBackUpTableViewCell.swift in Sources */,
 				523CABB01CB1847D0074B41E /* EpisodeTableViewCell.swift in Sources */,
 				523CABAA1CB178CA0074B41E /* Episode.swift in Sources */,
 				412C21B91DA981EB00417AFE /* Open.swift in Sources */,

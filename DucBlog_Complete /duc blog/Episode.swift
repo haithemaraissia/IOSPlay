@@ -55,11 +55,11 @@ class Episode
         return episodes
     }
     
-    static func ListPlay()
+    static func ListPlay(type: String)
     {
         
         
-        let urlString: String = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=39.039355,-94.586439&rankby=distance&types=bank&sensor=false&key=AIzaSyABubXDiwRSO2QIkXMQ41DjrrfCLissWPE"
+        let urlString: String = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=39.039355,-94.586439&rankby=distance&types=\(type)&sensor=false&key=AIzaSyABubXDiwRSO2QIkXMQ41DjrrfCLissWPE"
         let myUrl = URL(string: urlString)
         
         let jsonFile = Bundle.main.path(forResource: "DucBlog", ofType: "json")

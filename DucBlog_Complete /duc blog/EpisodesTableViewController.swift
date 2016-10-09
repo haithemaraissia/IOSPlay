@@ -12,6 +12,7 @@ import SafariServices
 class EpisodesTableViewController: UITableViewController
 {
     var episodes = [Episode]()
+    var places = [Place]()
     
     override func viewDidLoad()
     {
@@ -19,7 +20,15 @@ class EpisodesTableViewController: UITableViewController
         
         episodes = Episode.downloadAllEpisodes()
        // Episode.ListPlay()
-        Episode.DetailPlay()
+      //  Episode.DetailPlay()
+        places = Place.DownloadAllPlaces(type: "bakery")
+        for place in places
+        {
+            print("--Name \(place.name)")
+            print("Place Id \(place.placeId)")
+            print("Vicinity \(place.vicinity)")
+            print("Vicinity \(place.thumbnailURL?.absoluteString)")
+        }
         
         
         self.tableView.reloadData()
@@ -43,15 +52,15 @@ class EpisodesTableViewController: UITableViewController
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-        return episodes.count
+        return places.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Episode Cell", for: indexPath) as! EpisodeTableViewCell
-        let episode = self.episodes[(indexPath as NSIndexPath).row]
+        let place = self.places[(indexPath as NSIndexPath).row]
         
-        cell.episode = episode
+        cell.place = place
 
         return cell
     }
@@ -61,10 +70,10 @@ class EpisodesTableViewController: UITableViewController
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath:
         IndexPath)
     {
-        let selectedEpisode = self.episodes[(indexPath as NSIndexPath).row]
+        let selectedPlace = self.places[(indexPath as NSIndexPath).row]
         
         // import SafariServices
-        let safariVC = SFSafariViewController(url: selectedEpisode.url! as URL)
+        let safariVC = SFSafariViewController(url: URL(string: "https://maps.google.com/?cid=8705674934556788176")!)
         safariVC.view.tintColor = UIColor(red: 248/255.0, green: 47/255.0, blue: 38/255.0, alpha: 1.0)
         safariVC.delegate = self
         self.present(safariVC, animated: true, completion: nil)
