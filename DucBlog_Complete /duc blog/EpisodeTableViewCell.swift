@@ -11,52 +11,44 @@ import UIKit
 class EpisodeTableViewCell: UITableViewCell
 {
     
+    var place: Place! {
+        didSet {
+            self.updateUI()
+        }
+    }
+
     var episode: Episode! {
         didSet {
             self.updateUI()
         }
     }
-    
-    func Play2()
-    {
-        
-        //Downloading Image ;//Only Return Image Link
-        let urlString: String = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=39.039355,-94.586439&rankby=distance&types=bank&sensor=false&key=AIzaSyABubXDiwRSO2QIkXMQ41DjrrfCLissWPE"
-            let myUrl = URL(string: urlString)
-        let networkService = NetworkService(url: myUrl!)
-        
-        networkService.downloadImage{ (imageData) in
-            print("* \(imageData)")
-            let image = UIImage(data: imageData as Data)
-            DispatchQueue.main.async(execute: {
-                //self.thumbnailImageView.image = image
-                print("* \(imageData)")
-            })
-        }
-
-    }
-    
-    func Play()
-    {
-    
-        //Downloading Image ;//Only Return Image Link
-        let thumbnailURL = episode.thumbnailURL
-        print("% \(thumbnailURL)")
-        let networkService = NetworkService(url: thumbnailURL!)
-        
-        networkService.downloadImage{ (imageData) in
-            print("* \(imageData)")
-            let image = UIImage(data: imageData as Data)
-            DispatchQueue.main.async(execute: {
-               //self.thumbnailImageView.image = image
-               print("* \(imageData)")
-            })
-            
-            
-        }
-    }
-    
     func updateUI()
+    {
+        titleLabel.text = place.name
+        authorImageView.image = UIImage(named: "duc")
+        descriptionLabel.text = "No Description"
+        createdAtLabel.text = "No Creation"
+        
+        let thumbnailURL = place.thumbnailURL
+        let networkService = NetworkService(url: thumbnailURL!)
+        networkService.downloadImage { (imageData) in
+            let image = UIImage(data: imageData as Data)
+            DispatchQueue.main.async(execute: {
+                self.thumbnailImageView.image = image
+            })
+        }
+        
+        authorImageView.layer.cornerRadius = authorImageView.bounds.width / 2.0
+        authorImageView.layer.masksToBounds = true
+        authorImageView.layer.borderColor = UIColor.white.cgColor
+        authorImageView.layer.borderWidth = 1.0
+    }
+    
+    
+    
+    
+    
+    func updateUI2()
     {
         titleLabel.text = episode.title
         authorImageView.image = UIImage(named: "duc")

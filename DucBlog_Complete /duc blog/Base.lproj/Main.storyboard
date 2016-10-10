@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="X48-se-GmW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="X48-se-GmW">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--DucTran.io-->
@@ -10,51 +11,49 @@
             <objects>
                 <tableViewController id="PeE-FR-g7w" customClass="EpisodesTableViewController" customModule="Duc_Blog" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="106" sectionHeaderHeight="28" sectionFooterHeight="28" id="jY6-fk-dOs">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Episode Cell" rowHeight="111" id="qyY-lM-BrB" customClass="EpisodeTableViewCell" customModule="Duc_Blog" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="92" width="600" height="111"/>
+                                <rect key="frame" x="0.0" y="92" width="375" height="111"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qyY-lM-BrB" id="Lf7-V3-IRA">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="111"/>
+                                    <frame key="frameInset" width="375" height="110"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="57-61: Introduction to 3D Touch" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sm8-Gu-sFe">
-                                            <rect key="frame" x="112" y="16" width="480" height="20"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" misplaced="YES" text="57-61: Introduction to 3D Touch" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sm8-Gu-sFe">
+                                            <frame key="frameInset" minX="112" minY="16" width="480" height="20"/>
                                             <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sbc-PV-Hax">
-                                            <rect key="frame" x="112" y="40" width="480" height="34"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" misplaced="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sbc-PV-Hax">
+                                            <frame key="frameInset" minX="112" minY="40" width="480" height="34"/>
                                             <string key="text">3D touch is the future of multi-touch! It adds a whole new experience and layer of interaction to your app. In this episode, we are going to learn how to use Peek in 3D touch to display a preview for our app.</string>
                                             <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="12"/>
-                                            <color key="textColor" red="0.1176470588" green="0.12549019610000001" blue="0.2156862745" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
+                                            <color key="textColor" red="0.1176470588" green="0.12549019610000001" blue="0.2156862745" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="thumbnail" translatesAutoresizingMaskIntoConstraints="NO" id="alX-EF-kH2">
-                                            <rect key="frame" x="8" y="16" width="96" height="54"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="54" id="Cep-d6-NOg"/>
                                                 <constraint firstAttribute="width" constant="96" id="zIa-d0-4Tn"/>
                                             </constraints>
                                         </imageView>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="duc" translatesAutoresizingMaskIntoConstraints="NO" id="QxD-g0-jVg">
-                                            <rect key="frame" x="112" y="78" width="16" height="16"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="16" id="ACG-pA-peU"/>
                                                 <constraint firstAttribute="width" constant="16" id="p5X-Uc-BHp"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="Duc Tran | March 28, 2016" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HAK-ki-Z9I">
-                                            <rect key="frame" x="136" y="78" width="456" height="14"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" misplaced="YES" text="Duc Tran | March 28, 2016" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HAK-ki-Z9I">
+                                            <frame key="frameInset" minX="136" minY="78" width="456" height="14"/>
                                             <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="10"/>
-                                            <color key="textColor" red="0.1176470588" green="0.12549019610000001" blue="0.2156862745" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
+                                            <color key="textColor" red="0.1176470588" green="0.12549019610000001" blue="0.2156862745" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
-                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
                                         <constraint firstItem="HAK-ki-Z9I" firstAttribute="leading" secondItem="QxD-g0-jVg" secondAttribute="trailing" constant="8" id="0Iy-7j-xfH"/>
                                         <constraint firstAttribute="trailing" secondItem="HAK-ki-Z9I" secondAttribute="trailing" constant="8" id="0Qh-JV-7aC"/>
@@ -76,12 +75,12 @@
                                     </constraints>
                                     <variation key="default">
                                         <mask key="constraints">
-                                            <exclude reference="9nf-0N-Nzy"/>
                                             <exclude reference="FhU-TA-Ctr"/>
+                                            <exclude reference="9nf-0N-Nzy"/>
                                         </mask>
                                     </variation>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <outlet property="authorImageView" destination="QxD-g0-jVg" id="47u-DV-xTY"/>
                                     <outlet property="createdAtLabel" destination="HAK-ki-Z9I" id="vIZ-Jx-P1Y"/>
@@ -103,6 +102,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <segue destination="VSz-wX-QSI" kind="show" identifier="SequeTest" id="Nni-hO-Ire"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l9f-q9-t2r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -115,11 +117,11 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="FLB-e3-mu8">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="barTintColor" red="0.97254901960784312" green="0.18431372549019609" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.97254901960784312" green="0.18431372549019609" blue="0.14901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="0.0"/>
-                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
                     </navigationBar>
                     <connections>
@@ -130,9 +132,140 @@
             </objects>
             <point key="canvasLocation" x="643" y="429"/>
         </scene>
+        <!--Kc-Mo Guide-->
+        <scene sceneID="bIu-Wx-QUV">
+            <objects>
+                <tableViewController id="cDu-fk-khO" customClass="EpisodesTableViewController" customModule="Duc_Blog" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="106" sectionHeaderHeight="28" sectionFooterHeight="28" id="Nd0-Si-YNJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Episode Cell" rowHeight="111" id="plh-rH-d0Y" customClass="EpisodeTableViewCell" customModule="Duc_Blog" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="111"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="plh-rH-d0Y" id="mpW-Ka-SeP">
+                                    <frame key="frameInset" width="375" height="110"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" misplaced="YES" text="57-61: Introduction to 3D Touch" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pLR-hV-xtz">
+                                            <frame key="frameInset" minX="112" minY="16" width="480" height="20"/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" misplaced="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="30e-BA-2r8">
+                                            <frame key="frameInset" minX="112" minY="40" width="480" height="34"/>
+                                            <string key="text">3D touch is the future of multi-touch! It adds a whole new experience and layer of interaction to your app. In this episode, we are going to learn how to use Peek in 3D touch to display a preview for our app.</string>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="12"/>
+                                            <color key="textColor" red="0.1176470588" green="0.12549019610000001" blue="0.2156862745" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="thumbnail" translatesAutoresizingMaskIntoConstraints="NO" id="7sW-rB-fE7">
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="96" id="Whw-Xr-0Ng"/>
+                                                <constraint firstAttribute="height" constant="54" id="sJF-l0-Ztl"/>
+                                            </constraints>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="duc" translatesAutoresizingMaskIntoConstraints="NO" id="4QN-cU-8jf">
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="16" id="9UD-Dr-bMV"/>
+                                                <constraint firstAttribute="width" constant="16" id="TXC-y4-6UF"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" misplaced="YES" text="Duc Tran | March 28, 2016" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yfh-94-mwl">
+                                            <frame key="frameInset" minX="136" minY="78" width="456" height="14"/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="10"/>
+                                            <color key="textColor" red="0.1176470588" green="0.12549019610000001" blue="0.2156862745" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="4QN-cU-8jf" secondAttribute="bottom" constant="16" id="5PX-fE-NMT"/>
+                                        <constraint firstItem="Yfh-94-mwl" firstAttribute="leading" secondItem="4QN-cU-8jf" secondAttribute="trailing" constant="8" id="Azt-Vi-csb"/>
+                                        <constraint firstItem="Yfh-94-mwl" firstAttribute="leading" secondItem="4QN-cU-8jf" secondAttribute="trailing" constant="8" id="E2x-Cr-8zf"/>
+                                        <constraint firstAttribute="trailing" secondItem="pLR-hV-xtz" secondAttribute="trailing" constant="8" id="Ejm-hg-Cja"/>
+                                        <constraint firstAttribute="trailing" secondItem="30e-BA-2r8" secondAttribute="trailing" constant="8" id="JVc-gw-ys8"/>
+                                        <constraint firstItem="4QN-cU-8jf" firstAttribute="leading" secondItem="30e-BA-2r8" secondAttribute="leading" id="Rf5-bV-lAg"/>
+                                        <constraint firstItem="pLR-hV-xtz" firstAttribute="top" secondItem="mpW-Ka-SeP" secondAttribute="top" constant="16" id="Svv-nX-ULS"/>
+                                        <constraint firstItem="pLR-hV-xtz" firstAttribute="leading" secondItem="7sW-rB-fE7" secondAttribute="trailing" constant="8" id="TpF-hP-E1q"/>
+                                        <constraint firstAttribute="bottom" secondItem="4QN-cU-8jf" secondAttribute="bottom" constant="55" id="bic-CB-jag"/>
+                                        <constraint firstItem="30e-BA-2r8" firstAttribute="top" secondItem="pLR-hV-xtz" secondAttribute="bottom" constant="4" id="dI0-Dv-Pfi"/>
+                                        <constraint firstItem="30e-BA-2r8" firstAttribute="top" secondItem="pLR-hV-xtz" secondAttribute="bottom" constant="8" id="e7a-wL-9p4"/>
+                                        <constraint firstItem="7sW-rB-fE7" firstAttribute="leading" secondItem="mpW-Ka-SeP" secondAttribute="leading" constant="8" id="fuX-xT-D4G"/>
+                                        <constraint firstItem="Yfh-94-mwl" firstAttribute="top" secondItem="30e-BA-2r8" secondAttribute="bottom" constant="4" id="lzu-XQ-9Sn"/>
+                                        <constraint firstAttribute="trailing" secondItem="Yfh-94-mwl" secondAttribute="trailing" constant="8" id="plj-Og-8DR"/>
+                                        <constraint firstItem="7sW-rB-fE7" firstAttribute="top" secondItem="mpW-Ka-SeP" secondAttribute="top" constant="16" id="qgT-rV-mBK"/>
+                                        <constraint firstItem="4QN-cU-8jf" firstAttribute="top" secondItem="30e-BA-2r8" secondAttribute="bottom" constant="4" id="rL3-pD-69P"/>
+                                        <constraint firstItem="30e-BA-2r8" firstAttribute="leading" secondItem="7sW-rB-fE7" secondAttribute="trailing" constant="8" id="upy-Kq-dkv"/>
+                                    </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="bic-CB-jag"/>
+                                            <exclude reference="e7a-wL-9p4"/>
+                                        </mask>
+                                    </variation>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="authorImageView" destination="4QN-cU-8jf" id="N0w-3I-LG7"/>
+                                    <outlet property="createdAtLabel" destination="Yfh-94-mwl" id="EGh-hY-lpc"/>
+                                    <outlet property="descriptionLabel" destination="30e-BA-2r8" id="c2n-QM-W3K"/>
+                                    <outlet property="thumbnailImageView" destination="7sW-rB-fE7" id="Yp4-pV-oD1"/>
+                                    <outlet property="titleLabel" destination="pLR-hV-xtz" id="t84-nO-BpY"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="cDu-fk-khO" id="i86-xD-M0e"/>
+                            <outlet property="delegate" destination="cDu-fk-khO" id="D0j-f6-37V"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Kc-Mo Guide" id="Eag-Wv-S2f">
+                        <barButtonItem key="rightBarButtonItem" systemItem="bookmarks" id="sfb-zp-9Og">
+                            <connections>
+                                <action selector="fullBlogDidTap:" destination="cDu-fk-khO" id="Ius-Ek-dd3"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QIC-QA-yfw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1311" y="1229"/>
+        </scene>
+        <!--Test View Controller-->
+        <scene sceneID="Maz-he-29L">
+            <objects>
+                <viewController id="VSz-wX-QSI" customClass="TestViewController" customModule="Duc_Blog" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="El8-cE-IRJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="TWa-V0-M3X"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2Wp-nL-lNG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label Content over herer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sfN-Bl-MRL">
+                                <frame key="frameInset" minX="161" minY="156" width="190" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.59695344486040214" green="0.69045403748195722" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="Test" destination="sfN-Bl-MRL" id="4mY-RV-94f"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uAk-yu-ie7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2413.5999999999999" y="1223.8380809595203"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="duc" width="432" height="432"/>
-        <image name="thumbnail" width="1280" height="720"/>
+        <image name="duc" width="216" height="216"/>
+        <image name="thumbnail" width="640" height="360"/>
     </resources>
 </document>

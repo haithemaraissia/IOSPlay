@@ -26,6 +26,7 @@
 		412C21CD1DA9823500417AFE /* Southwest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C21C51DA9823500417AFE /* Southwest.swift */; };
 		412C21CE1DA9823500417AFE /* Viewport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C21C61DA9823500417AFE /* Viewport.swift */; };
 		412C21D11DA985B900417AFE /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C21D01DA985B900417AFE /* Place.swift */; };
+		412FE0821DABEF6700D74090 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412FE0811DABEF6700D74090 /* TestViewController.swift */; };
 		41590CEA1DAAC67500DCD030 /* EpisodeBackUpTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41590CE91DAAC67500DCD030 /* EpisodeBackUpTableViewCell.swift */; };
 		416703681DA6D8CC00EF152A /* Help.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 416703671DA6D8CC00EF152A /* Help.rtf */; };
 		523CAB981CB178890074B41E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523CAB971CB178890074B41E /* AppDelegate.swift */; };
@@ -59,6 +60,7 @@
 		412C21C51DA9823500417AFE /* Southwest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Southwest.swift; sourceTree = "<group>"; };
 		412C21C61DA9823500417AFE /* Viewport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Viewport.swift; sourceTree = "<group>"; };
 		412C21D01DA985B900417AFE /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Place.swift; path = "duc blog/Place.swift"; sourceTree = SOURCE_ROOT; };
+		412FE0811DABEF6700D74090 /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TestViewController.swift; path = "duc blog/TestViewController.swift"; sourceTree = SOURCE_ROOT; };
 		41590CE91DAAC67500DCD030 /* EpisodeBackUpTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EpisodeBackUpTableViewCell.swift; path = "duc blog/EpisodeBackUpTableViewCell.swift"; sourceTree = SOURCE_ROOT; };
 		416703671DA6D8CC00EF152A /* Help.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; name = Help.rtf; path = "duc blog/Help.rtf"; sourceTree = SOURCE_ROOT; };
 		523CAB941CB178890074B41E /* Duc Blog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Duc Blog.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -169,6 +171,7 @@
 		523CABB71CB19BD10074B41E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				412FE0811DABEF6700D74090 /* TestViewController.swift */,
 				523CABAD1CB184390074B41E /* EpisodesTableViewController.swift */,
 			);
 			name = Controller;
@@ -287,6 +290,7 @@
 				412C21B91DA981EB00417AFE /* Open.swift in Sources */,
 				412C21C71DA9823500417AFE /* Geometry.swift in Sources */,
 				412C21CE1DA9823500417AFE /* Viewport.swift in Sources */,
+				412FE0821DABEF6700D74090 /* TestViewController.swift in Sources */,
 				412C21B71DA981EB00417AFE /* Aspects.swift in Sources */,
 				412C21CB1DA9823500417AFE /* Photos.swift in Sources */,
 				412C21BC1DA981EB00417AFE /* Reviews.swift in Sources */,

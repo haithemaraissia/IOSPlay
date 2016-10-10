@@ -65,19 +65,30 @@ class EpisodesTableViewController: UITableViewController
         return cell
     }
     
+    
+    // Value To be Passed
+    var valueToPass:String!
+    
     // MARK: - UITableViewDelegate
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath:
         IndexPath)
     {
         let selectedPlace = self.places[(indexPath as NSIndexPath).row]
+//        
+//        // import SafariServices
+//        let safariVC = SFSafariViewController(url: URL(string: "https://maps.google.com/?cid=8705674934556788176")!)
+//        safariVC.view.tintColor = UIColor(red: 248/255.0, green: 47/255.0, blue: 38/255.0, alpha: 1.0)
+//        safariVC.delegate = self
+//        self.present(safariVC, animated: true, completion: nil)
+//        
         
-        // import SafariServices
-        let safariVC = SFSafariViewController(url: URL(string: "https://maps.google.com/?cid=8705674934556788176")!)
-        safariVC.view.tintColor = UIColor(red: 248/255.0, green: 47/255.0, blue: 38/255.0, alpha: 1.0)
-        safariVC.delegate = self
-        self.present(safariVC, animated: true, completion: nil)
+        valueToPass = selectedPlace.name
+        performSegue(withIdentifier: "SequeTest", sender: self)
     }
+    
+    
+    
     
     // MARK: - Target / Action
     
@@ -91,6 +102,31 @@ class EpisodesTableViewController: UITableViewController
         safariVC.delegate = self
         self.present(safariVC, animated: true, completion: nil)
     }
+    
+    
+    
+    //Seque
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+       
+        if (segue.identifier == "SequeTest"){
+            
+            //intialize new view controller and cast it as your view controller
+            var testViewController = segue.destination as! TestViewController
+            
+            testViewController.testPassed = valueToPass
+            
+            //your new view controller should have the property that will store passed value 
+            
+            
+        }
+        
+        
+        
+    }
+  
+    
+    
+    
     
 }
 
