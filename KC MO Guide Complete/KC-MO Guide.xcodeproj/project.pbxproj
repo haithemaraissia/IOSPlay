@@ -38,6 +38,8 @@
 		4144E4AA1DABF8D000F0EFC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 523CAB9E1CB178890074B41E /* Assets.xcassets */; };
 		4144E4AB1DABF8D000F0EFC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 523CAB9B1CB178890074B41E /* Main.storyboard */; };
 		4144E4AC1DABF8D000F0EFC2 /* Help.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 412FE0831DABF30300D74090 /* Help.rtf */; };
+		41514A441DAC184A0063B73A /* SectionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41514A431DAC184A0063B73A /* SectionCollectionViewCell.swift */; };
+		41514A461DAC19730063B73A /* SectionCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41514A451DAC19730063B73A /* SectionCollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +65,8 @@
 		412FE0811DABEF6700D74090 /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TestViewController.swift; path = "KC-MO Guide/Controller/TestViewController.swift"; sourceTree = SOURCE_ROOT; };
 		412FE0831DABF30300D74090 /* Help.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Help.rtf; sourceTree = "<group>"; };
 		4144E4B01DABF8D000F0EFC2 /* KC-MO Guide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KC-MO Guide.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		41514A431DAC184A0063B73A /* SectionCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionCollectionViewCell.swift; sourceTree = "<group>"; };
+		41514A451DAC19730063B73A /* SectionCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionCollectionViewController.swift; sourceTree = "<group>"; };
 		41590CE91DAAC67500DCD030 /* EpisodeBackUpTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EpisodeBackUpTableViewCell.swift; path = "KC-MO Guide/View/EpisodeBackUpTableViewCell.swift"; sourceTree = SOURCE_ROOT; };
 		523CAB971CB178890074B41E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		523CAB9C1CB178890074B41E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -70,8 +74,8 @@
 		523CABA11CB178890074B41E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		523CABA31CB178890074B41E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		523CABA91CB178CA0074B41E /* Episode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
-		523CABAD1CB184390074B41E /* EpisodeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EpisodeTableViewCell.swift; sourceTree = "<group>"; };
-		523CABAF1CB1847D0074B41E /* EpisodesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EpisodesTableViewController.swift; path = View/EpisodesTableViewController.swift; sourceTree = "<group>"; };
+		523CABAD1CB184390074B41E /* EpisodeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EpisodeTableViewCell.swift; path = Controller/EpisodeTableViewCell.swift; sourceTree = "<group>"; };
+		523CABAF1CB1847D0074B41E /* EpisodesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EpisodesTableViewController.swift; path = ../View/EpisodesTableViewController.swift; sourceTree = "<group>"; };
 		523CABB11CB1858A0074B41E /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		52B073B81CB438B500B2FBD3 /* DucBlog.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DucBlog.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -173,8 +177,9 @@
 		523CABB71CB19BD10074B41E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				523CABAF1CB1847D0074B41E /* EpisodesTableViewController.swift */,
 				412FE0811DABEF6700D74090 /* TestViewController.swift */,
-				523CABAD1CB184390074B41E /* EpisodeTableViewCell.swift */,
+				41514A451DAC19730063B73A /* SectionCollectionViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -182,9 +187,10 @@
 		523CABB81CB19BD90074B41E /* View */ = {
 			isa = PBXGroup;
 			children = (
-				523CABAF1CB1847D0074B41E /* EpisodesTableViewController.swift */,
+				523CABAD1CB184390074B41E /* EpisodeTableViewCell.swift */,
 				523CAB9B1CB178890074B41E /* Main.storyboard */,
 				41590CE91DAAC67500DCD030 /* EpisodeBackUpTableViewCell.swift */,
+				41514A431DAC184A0063B73A /* SectionCollectionViewCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -226,6 +232,9 @@
 		523CAB8C1CB178890074B41E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					DetailPlaceViewController,
+				);
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Developers Academy";
@@ -284,6 +293,7 @@
 				4144E4991DABF8D000F0EFC2 /* EpisodesTableViewController.swift in Sources */,
 				4144E49A1DABF8D000F0EFC2 /* Episode.swift in Sources */,
 				4144E49B1DABF8D000F0EFC2 /* Open.swift in Sources */,
+				41514A461DAC19730063B73A /* SectionCollectionViewController.swift in Sources */,
 				4144E49C1DABF8D000F0EFC2 /* Geometry.swift in Sources */,
 				4144E49D1DABF8D000F0EFC2 /* Viewport.swift in Sources */,
 				4144E49E1DABF8D000F0EFC2 /* TestViewController.swift in Sources */,
@@ -293,6 +303,7 @@
 				4144E4A21DABF8D000F0EFC2 /* Southwest.swift in Sources */,
 				4144E4A31DABF8D000F0EFC2 /* DetailJson4Swift_Base.swift in Sources */,
 				4144E4A41DABF8D000F0EFC2 /* Address_components.swift in Sources */,
+				41514A441DAC184A0063B73A /* SectionCollectionViewCell.swift in Sources */,
 				4144E4A51DABF8D000F0EFC2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
