@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "523CAB931CB178890074B41E"
-               BuildableName = "Duc Blog.app"
-               BlueprintName = "Duc Blog"
-               ReferencedContainer = "container:duc blog.xcodeproj">
+               BlueprintIdentifier = "4144E48A1DABF8D000F0EFC2"
+               BuildableName = "KC-MO Guide.app"
+               BlueprintName = "KC-MO Guide"
+               ReferencedContainer = "container:KC-MO Guide.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,7 +35,7 @@
             BlueprintIdentifier = "523CAB931CB178890074B41E"
             BuildableName = "Duc Blog.app"
             BlueprintName = "Duc Blog"
-            ReferencedContainer = "container:duc blog.xcodeproj">
+            ReferencedContainer = "container:KC-MO Guide.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -55,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "523CAB931CB178890074B41E"
-            BuildableName = "Duc Blog.app"
-            BlueprintName = "Duc Blog"
-            ReferencedContainer = "container:duc blog.xcodeproj">
+            BlueprintIdentifier = "4144E48A1DABF8D000F0EFC2"
+            BuildableName = "KC-MO Guide.app"
+            BlueprintName = "KC-MO Guide"
+            ReferencedContainer = "container:KC-MO Guide.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -70,16 +70,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "523CAB931CB178890074B41E"
-            BuildableName = "Duc Blog.app"
-            BlueprintName = "Duc Blog"
-            ReferencedContainer = "container:duc blog.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

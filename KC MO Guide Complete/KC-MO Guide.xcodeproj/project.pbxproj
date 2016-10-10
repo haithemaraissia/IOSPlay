@@ -7,37 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		412C21AA1DA9812900417AFE /* DetailJson4Swift_Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C21A91DA9812900417AFE /* DetailJson4Swift_Base.swift */; };
-		412C21AC1DA9813D00417AFE /* DetailPhotos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C21AB1DA9813D00417AFE /* DetailPhotos.swift */; };
-		412C21AE1DA9815000417AFE /* DetailResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C21AD1DA9815000417AFE /* DetailResult.swift */; };
-		412C21B61DA981EB00417AFE /* Address_components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C21AF1DA981EB00417AFE /* Address_components.swift */; };
-		412C21B71DA981EB00417AFE /* Aspects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C21B01DA981EB00417AFE /* Aspects.swift */; };
-		412C21B81DA981EB00417AFE /* Close.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C21B11DA981EB00417AFE /* Close.swift */; };
-		412C21B91DA981EB00417AFE /* Open.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C21B21DA981EB00417AFE /* Open.swift */; };
-		412C21BA1DA981EB00417AFE /* Opening_hours.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C21B31DA981EB00417AFE /* Opening_hours.swift */; };
-		412C21BB1DA981EB00417AFE /* Periods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C21B41DA981EB00417AFE /* Periods.swift */; };
-		412C21BC1DA981EB00417AFE /* Reviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C21B51DA981EB00417AFE /* Reviews.swift */; };
-		412C21C71DA9823500417AFE /* Geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C21BF1DA9823500417AFE /* Geometry.swift */; };
-		412C21C81DA9823500417AFE /* Json4Swift_Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C21C01DA9823500417AFE /* Json4Swift_Base.swift */; };
-		412C21C91DA9823500417AFE /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C21C11DA9823500417AFE /* Location.swift */; };
-		412C21CA1DA9823500417AFE /* Northeast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C21C21DA9823500417AFE /* Northeast.swift */; };
-		412C21CB1DA9823500417AFE /* Photos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C21C31DA9823500417AFE /* Photos.swift */; };
-		412C21CC1DA9823500417AFE /* Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C21C41DA9823500417AFE /* Results.swift */; };
-		412C21CD1DA9823500417AFE /* Southwest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C21C51DA9823500417AFE /* Southwest.swift */; };
-		412C21CE1DA9823500417AFE /* Viewport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C21C61DA9823500417AFE /* Viewport.swift */; };
-		412C21D11DA985B900417AFE /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C21D01DA985B900417AFE /* Place.swift */; };
-		412FE0821DABEF6700D74090 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412FE0811DABEF6700D74090 /* TestViewController.swift */; };
-		41590CEA1DAAC67500DCD030 /* EpisodeBackUpTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41590CE91DAAC67500DCD030 /* EpisodeBackUpTableViewCell.swift */; };
-		416703681DA6D8CC00EF152A /* Help.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 416703671DA6D8CC00EF152A /* Help.rtf */; };
-		523CAB981CB178890074B41E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523CAB971CB178890074B41E /* AppDelegate.swift */; };
-		523CAB9D1CB178890074B41E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 523CAB9B1CB178890074B41E /* Main.storyboard */; };
-		523CAB9F1CB178890074B41E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 523CAB9E1CB178890074B41E /* Assets.xcassets */; };
-		523CABA21CB178890074B41E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 523CABA01CB178890074B41E /* LaunchScreen.storyboard */; };
-		523CABAA1CB178CA0074B41E /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523CABA91CB178CA0074B41E /* Episode.swift */; };
-		523CABAE1CB184390074B41E /* EpisodesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523CABAD1CB184390074B41E /* EpisodesTableViewController.swift */; };
-		523CABB01CB1847D0074B41E /* EpisodeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523CABAF1CB1847D0074B41E /* EpisodeTableViewCell.swift */; };
-		523CABB21CB1858A0074B41E /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523CABB11CB1858A0074B41E /* NetworkService.swift */; };
-		52B073B91CB438B500B2FBD3 /* DucBlog.json in Resources */ = {isa = PBXBuildFile; fileRef = 52B073B81CB438B500B2FBD3 /* DucBlog.json */; };
+		4144E48C1DABF8D000F0EFC2 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523CABB11CB1858A0074B41E /* NetworkService.swift */; };
+		4144E48D1DABF8D000F0EFC2 /* Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C21C41DA9823500417AFE /* Results.swift */; };
+		4144E48E1DABF8D000F0EFC2 /* Opening_hours.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C21B31DA981EB00417AFE /* Opening_hours.swift */; };
+		4144E48F1DABF8D000F0EFC2 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C21D01DA985B900417AFE /* Place.swift */; };
+		4144E4901DABF8D000F0EFC2 /* Close.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C21B11DA981EB00417AFE /* Close.swift */; };
+		4144E4911DABF8D000F0EFC2 /* DetailPhotos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C21AB1DA9813D00417AFE /* DetailPhotos.swift */; };
+		4144E4921DABF8D000F0EFC2 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C21C11DA9823500417AFE /* Location.swift */; };
+		4144E4931DABF8D000F0EFC2 /* Northeast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C21C21DA9823500417AFE /* Northeast.swift */; };
+		4144E4941DABF8D000F0EFC2 /* DetailResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C21AD1DA9815000417AFE /* DetailResult.swift */; };
+		4144E4951DABF8D000F0EFC2 /* Periods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C21B41DA981EB00417AFE /* Periods.swift */; };
+		4144E4961DABF8D000F0EFC2 /* Json4Swift_Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C21C01DA9823500417AFE /* Json4Swift_Base.swift */; };
+		4144E4971DABF8D000F0EFC2 /* EpisodeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523CABAD1CB184390074B41E /* EpisodeTableViewCell.swift */; };
+		4144E4981DABF8D000F0EFC2 /* EpisodeBackUpTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41590CE91DAAC67500DCD030 /* EpisodeBackUpTableViewCell.swift */; };
+		4144E4991DABF8D000F0EFC2 /* EpisodesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523CABAF1CB1847D0074B41E /* EpisodesTableViewController.swift */; };
+		4144E49A1DABF8D000F0EFC2 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523CABA91CB178CA0074B41E /* Episode.swift */; };
+		4144E49B1DABF8D000F0EFC2 /* Open.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C21B21DA981EB00417AFE /* Open.swift */; };
+		4144E49C1DABF8D000F0EFC2 /* Geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C21BF1DA9823500417AFE /* Geometry.swift */; };
+		4144E49D1DABF8D000F0EFC2 /* Viewport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C21C61DA9823500417AFE /* Viewport.swift */; };
+		4144E49E1DABF8D000F0EFC2 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412FE0811DABEF6700D74090 /* TestViewController.swift */; };
+		4144E49F1DABF8D000F0EFC2 /* Aspects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C21B01DA981EB00417AFE /* Aspects.swift */; };
+		4144E4A01DABF8D000F0EFC2 /* Photos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C21C31DA9823500417AFE /* Photos.swift */; };
+		4144E4A11DABF8D000F0EFC2 /* Reviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C21B51DA981EB00417AFE /* Reviews.swift */; };
+		4144E4A21DABF8D000F0EFC2 /* Southwest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C21C51DA9823500417AFE /* Southwest.swift */; };
+		4144E4A31DABF8D000F0EFC2 /* DetailJson4Swift_Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C21A91DA9812900417AFE /* DetailJson4Swift_Base.swift */; };
+		4144E4A41DABF8D000F0EFC2 /* Address_components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C21AF1DA981EB00417AFE /* Address_components.swift */; };
+		4144E4A51DABF8D000F0EFC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523CAB971CB178890074B41E /* AppDelegate.swift */; };
+		4144E4A81DABF8D000F0EFC2 /* DucBlog.json in Resources */ = {isa = PBXBuildFile; fileRef = 52B073B81CB438B500B2FBD3 /* DucBlog.json */; };
+		4144E4A91DABF8D000F0EFC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 523CABA01CB178890074B41E /* LaunchScreen.storyboard */; };
+		4144E4AA1DABF8D000F0EFC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 523CAB9E1CB178890074B41E /* Assets.xcassets */; };
+		4144E4AB1DABF8D000F0EFC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 523CAB9B1CB178890074B41E /* Main.storyboard */; };
+		4144E4AC1DABF8D000F0EFC2 /* Help.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 412FE0831DABF30300D74090 /* Help.rtf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,25 +59,25 @@
 		412C21C41DA9823500417AFE /* Results.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Results.swift; sourceTree = "<group>"; };
 		412C21C51DA9823500417AFE /* Southwest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Southwest.swift; sourceTree = "<group>"; };
 		412C21C61DA9823500417AFE /* Viewport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Viewport.swift; sourceTree = "<group>"; };
-		412C21D01DA985B900417AFE /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Place.swift; path = "duc blog/Place.swift"; sourceTree = SOURCE_ROOT; };
-		412FE0811DABEF6700D74090 /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TestViewController.swift; path = "duc blog/TestViewController.swift"; sourceTree = SOURCE_ROOT; };
-		41590CE91DAAC67500DCD030 /* EpisodeBackUpTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EpisodeBackUpTableViewCell.swift; path = "duc blog/EpisodeBackUpTableViewCell.swift"; sourceTree = SOURCE_ROOT; };
-		416703671DA6D8CC00EF152A /* Help.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; name = Help.rtf; path = "duc blog/Help.rtf"; sourceTree = SOURCE_ROOT; };
-		523CAB941CB178890074B41E /* Duc Blog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Duc Blog.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		412C21D01DA985B900417AFE /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Place.swift; path = "KC-MO Guide/Entity/Place.swift"; sourceTree = SOURCE_ROOT; };
+		412FE0811DABEF6700D74090 /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TestViewController.swift; path = "KC-MO Guide/Controller/TestViewController.swift"; sourceTree = SOURCE_ROOT; };
+		412FE0831DABF30300D74090 /* Help.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Help.rtf; sourceTree = "<group>"; };
+		4144E4B01DABF8D000F0EFC2 /* KC-MO Guide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KC-MO Guide.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		41590CE91DAAC67500DCD030 /* EpisodeBackUpTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EpisodeBackUpTableViewCell.swift; path = "KC-MO Guide/View/EpisodeBackUpTableViewCell.swift"; sourceTree = SOURCE_ROOT; };
 		523CAB971CB178890074B41E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		523CAB9C1CB178890074B41E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		523CAB9E1CB178890074B41E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		523CABA11CB178890074B41E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		523CABA31CB178890074B41E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		523CABA91CB178CA0074B41E /* Episode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
-		523CABAD1CB184390074B41E /* EpisodesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EpisodesTableViewController.swift; sourceTree = "<group>"; };
-		523CABAF1CB1847D0074B41E /* EpisodeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EpisodeTableViewCell.swift; sourceTree = "<group>"; };
+		523CABAD1CB184390074B41E /* EpisodeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EpisodeTableViewCell.swift; sourceTree = "<group>"; };
+		523CABAF1CB1847D0074B41E /* EpisodesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EpisodesTableViewController.swift; path = View/EpisodesTableViewController.swift; sourceTree = "<group>"; };
 		523CABB11CB1858A0074B41E /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		52B073B81CB438B500B2FBD3 /* DucBlog.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DucBlog.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		523CAB911CB178890074B41E /* Frameworks */ = {
+		4144E4A61DABF8D000F0EFC2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -92,7 +92,7 @@
 			children = (
 				412C21D01DA985B900417AFE /* Place.swift */,
 			);
-			name = Entity;
+			path = Entity;
 			sourceTree = "<group>";
 		};
 		416703261DA6D71E00EF152A /* GooglePlace */ = {
@@ -118,6 +118,7 @@
 				412C21C61DA9823500417AFE /* Viewport.swift */,
 			);
 			name = List;
+			path = ListJsonSwiftMapping;
 			sourceTree = "<group>";
 		};
 		416703481DA6D7D000EF152A /* Detail */ = {
@@ -135,12 +136,13 @@
 				412C21B51DA981EB00417AFE /* Reviews.swift */,
 			);
 			name = Detail;
+			path = DetailJsonSwiftMapping;
 			sourceTree = "<group>";
 		};
 		523CAB8B1CB178890074B41E = {
 			isa = PBXGroup;
 			children = (
-				523CAB961CB178890074B41E /* Duc Blog */,
+				523CAB961CB178890074B41E /* KC-MO Guide */,
 				523CAB951CB178890074B41E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -148,12 +150,12 @@
 		523CAB951CB178890074B41E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				523CAB941CB178890074B41E /* Duc Blog.app */,
+				4144E4B01DABF8D000F0EFC2 /* KC-MO Guide.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		523CAB961CB178890074B41E /* Duc Blog */ = {
+		523CAB961CB178890074B41E /* KC-MO Guide */ = {
 			isa = PBXGroup;
 			children = (
 				523CABB91CB19BEB0074B41E /* Model */,
@@ -163,24 +165,24 @@
 				523CAB9E1CB178890074B41E /* Assets.xcassets */,
 				523CABA01CB178890074B41E /* LaunchScreen.storyboard */,
 				523CABA31CB178890074B41E /* Info.plist */,
-				416703671DA6D8CC00EF152A /* Help.rtf */,
+				412FE0831DABF30300D74090 /* Help.rtf */,
 			);
-			path = "Duc Blog";
+			path = "KC-MO Guide";
 			sourceTree = "<group>";
 		};
 		523CABB71CB19BD10074B41E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				412FE0811DABEF6700D74090 /* TestViewController.swift */,
-				523CABAD1CB184390074B41E /* EpisodesTableViewController.swift */,
+				523CABAD1CB184390074B41E /* EpisodeTableViewCell.swift */,
 			);
-			name = Controller;
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		523CABB81CB19BD90074B41E /* View */ = {
 			isa = PBXGroup;
 			children = (
-				523CABAF1CB1847D0074B41E /* EpisodeTableViewCell.swift */,
+				523CABAF1CB1847D0074B41E /* EpisodesTableViewController.swift */,
 				523CAB9B1CB178890074B41E /* Main.storyboard */,
 				41590CE91DAAC67500DCD030 /* EpisodeBackUpTableViewCell.swift */,
 			);
@@ -201,21 +203,21 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		523CAB931CB178890074B41E /* Duc Blog */ = {
+		4144E48A1DABF8D000F0EFC2 /* KC-MO Guide */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 523CABA61CB178890074B41E /* Build configuration list for PBXNativeTarget "Duc Blog" */;
+			buildConfigurationList = 4144E4AD1DABF8D000F0EFC2 /* Build configuration list for PBXNativeTarget "KC-MO Guide" */;
 			buildPhases = (
-				523CAB901CB178890074B41E /* Sources */,
-				523CAB911CB178890074B41E /* Frameworks */,
-				523CAB921CB178890074B41E /* Resources */,
+				4144E48B1DABF8D000F0EFC2 /* Sources */,
+				4144E4A61DABF8D000F0EFC2 /* Frameworks */,
+				4144E4A71DABF8D000F0EFC2 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Duc Blog";
+			name = "KC-MO Guide";
 			productName = "Duc Blog";
-			productReference = 523CAB941CB178890074B41E /* Duc Blog.app */;
+			productReference = 4144E4B01DABF8D000F0EFC2 /* KC-MO Guide.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -227,14 +229,8 @@
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Developers Academy";
-				TargetAttributes = {
-					523CAB931CB178890074B41E = {
-						CreatedOnToolsVersion = 7.3;
-						LastSwiftMigration = 0800;
-					};
-				};
 			};
-			buildConfigurationList = 523CAB8F1CB178890074B41E /* Build configuration list for PBXProject "duc blog" */;
+			buildConfigurationList = 523CAB8F1CB178890074B41E /* Build configuration list for PBXProject "KC-MO Guide" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -247,57 +243,57 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				523CAB931CB178890074B41E /* Duc Blog */,
+				4144E48A1DABF8D000F0EFC2 /* KC-MO Guide */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		523CAB921CB178890074B41E /* Resources */ = {
+		4144E4A71DABF8D000F0EFC2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				416703681DA6D8CC00EF152A /* Help.rtf in Resources */,
-				52B073B91CB438B500B2FBD3 /* DucBlog.json in Resources */,
-				523CABA21CB178890074B41E /* LaunchScreen.storyboard in Resources */,
-				523CAB9F1CB178890074B41E /* Assets.xcassets in Resources */,
-				523CAB9D1CB178890074B41E /* Main.storyboard in Resources */,
+				4144E4A81DABF8D000F0EFC2 /* DucBlog.json in Resources */,
+				4144E4A91DABF8D000F0EFC2 /* LaunchScreen.storyboard in Resources */,
+				4144E4AA1DABF8D000F0EFC2 /* Assets.xcassets in Resources */,
+				4144E4AB1DABF8D000F0EFC2 /* Main.storyboard in Resources */,
+				4144E4AC1DABF8D000F0EFC2 /* Help.rtf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		523CAB901CB178890074B41E /* Sources */ = {
+		4144E48B1DABF8D000F0EFC2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				523CABB21CB1858A0074B41E /* NetworkService.swift in Sources */,
-				412C21CC1DA9823500417AFE /* Results.swift in Sources */,
-				412C21BA1DA981EB00417AFE /* Opening_hours.swift in Sources */,
-				412C21D11DA985B900417AFE /* Place.swift in Sources */,
-				412C21B81DA981EB00417AFE /* Close.swift in Sources */,
-				412C21AC1DA9813D00417AFE /* DetailPhotos.swift in Sources */,
-				412C21C91DA9823500417AFE /* Location.swift in Sources */,
-				412C21CA1DA9823500417AFE /* Northeast.swift in Sources */,
-				412C21AE1DA9815000417AFE /* DetailResult.swift in Sources */,
-				412C21BB1DA981EB00417AFE /* Periods.swift in Sources */,
-				412C21C81DA9823500417AFE /* Json4Swift_Base.swift in Sources */,
-				523CABAE1CB184390074B41E /* EpisodesTableViewController.swift in Sources */,
-				41590CEA1DAAC67500DCD030 /* EpisodeBackUpTableViewCell.swift in Sources */,
-				523CABB01CB1847D0074B41E /* EpisodeTableViewCell.swift in Sources */,
-				523CABAA1CB178CA0074B41E /* Episode.swift in Sources */,
-				412C21B91DA981EB00417AFE /* Open.swift in Sources */,
-				412C21C71DA9823500417AFE /* Geometry.swift in Sources */,
-				412C21CE1DA9823500417AFE /* Viewport.swift in Sources */,
-				412FE0821DABEF6700D74090 /* TestViewController.swift in Sources */,
-				412C21B71DA981EB00417AFE /* Aspects.swift in Sources */,
-				412C21CB1DA9823500417AFE /* Photos.swift in Sources */,
-				412C21BC1DA981EB00417AFE /* Reviews.swift in Sources */,
-				412C21CD1DA9823500417AFE /* Southwest.swift in Sources */,
-				412C21AA1DA9812900417AFE /* DetailJson4Swift_Base.swift in Sources */,
-				412C21B61DA981EB00417AFE /* Address_components.swift in Sources */,
-				523CAB981CB178890074B41E /* AppDelegate.swift in Sources */,
+				4144E48C1DABF8D000F0EFC2 /* NetworkService.swift in Sources */,
+				4144E48D1DABF8D000F0EFC2 /* Results.swift in Sources */,
+				4144E48E1DABF8D000F0EFC2 /* Opening_hours.swift in Sources */,
+				4144E48F1DABF8D000F0EFC2 /* Place.swift in Sources */,
+				4144E4901DABF8D000F0EFC2 /* Close.swift in Sources */,
+				4144E4911DABF8D000F0EFC2 /* DetailPhotos.swift in Sources */,
+				4144E4921DABF8D000F0EFC2 /* Location.swift in Sources */,
+				4144E4931DABF8D000F0EFC2 /* Northeast.swift in Sources */,
+				4144E4941DABF8D000F0EFC2 /* DetailResult.swift in Sources */,
+				4144E4951DABF8D000F0EFC2 /* Periods.swift in Sources */,
+				4144E4961DABF8D000F0EFC2 /* Json4Swift_Base.swift in Sources */,
+				4144E4971DABF8D000F0EFC2 /* EpisodeTableViewCell.swift in Sources */,
+				4144E4981DABF8D000F0EFC2 /* EpisodeBackUpTableViewCell.swift in Sources */,
+				4144E4991DABF8D000F0EFC2 /* EpisodesTableViewController.swift in Sources */,
+				4144E49A1DABF8D000F0EFC2 /* Episode.swift in Sources */,
+				4144E49B1DABF8D000F0EFC2 /* Open.swift in Sources */,
+				4144E49C1DABF8D000F0EFC2 /* Geometry.swift in Sources */,
+				4144E49D1DABF8D000F0EFC2 /* Viewport.swift in Sources */,
+				4144E49E1DABF8D000F0EFC2 /* TestViewController.swift in Sources */,
+				4144E49F1DABF8D000F0EFC2 /* Aspects.swift in Sources */,
+				4144E4A01DABF8D000F0EFC2 /* Photos.swift in Sources */,
+				4144E4A11DABF8D000F0EFC2 /* Reviews.swift in Sources */,
+				4144E4A21DABF8D000F0EFC2 /* Southwest.swift in Sources */,
+				4144E4A31DABF8D000F0EFC2 /* DetailJson4Swift_Base.swift in Sources */,
+				4144E4A41DABF8D000F0EFC2 /* Address_components.swift in Sources */,
+				4144E4A51DABF8D000F0EFC2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,6 +319,30 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		4144E4AE1DABF8D000F0EFC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "$(SRCROOT)/KC-MO Guide/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "kc-mo-guide.com.haithem-araissia";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		4144E4AF1DABF8D000F0EFC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "$(SRCROOT)/KC-MO Guide/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "kc-mo-guide.com.haithem-araissia";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		523CABA41CB178890074B41E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -413,47 +433,23 @@
 			};
 			name = Release;
 		};
-		523CABA71CB178890074B41E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "Duc Blog/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "io.ductran.Duc-Blog";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		523CABA81CB178890074B41E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "Duc Blog/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "io.ductran.Duc-Blog";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		523CAB8F1CB178890074B41E /* Build configuration list for PBXProject "duc blog" */ = {
+		4144E4AD1DABF8D000F0EFC2 /* Build configuration list for PBXNativeTarget "KC-MO Guide" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				523CABA41CB178890074B41E /* Debug */,
-				523CABA51CB178890074B41E /* Release */,
+				4144E4AE1DABF8D000F0EFC2 /* Debug */,
+				4144E4AF1DABF8D000F0EFC2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		523CABA61CB178890074B41E /* Build configuration list for PBXNativeTarget "Duc Blog" */ = {
+		523CAB8F1CB178890074B41E /* Build configuration list for PBXProject "KC-MO Guide" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				523CABA71CB178890074B41E /* Debug */,
-				523CABA81CB178890074B41E /* Release */,
+				523CABA41CB178890074B41E /* Debug */,
+				523CABA51CB178890074B41E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

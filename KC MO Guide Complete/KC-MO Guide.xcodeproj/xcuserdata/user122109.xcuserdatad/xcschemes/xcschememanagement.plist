@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Duc Blog.xcscheme</key>
+		<key>KC MO Guide.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,6 +12,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>4144E48A1DABF8D000F0EFC2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>523CAB931CB178890074B41E</key>
 		<dict>
 			<key>primary</key>
