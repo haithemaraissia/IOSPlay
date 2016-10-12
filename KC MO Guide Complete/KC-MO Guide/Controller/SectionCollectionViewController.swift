@@ -8,10 +8,10 @@
 
 import UIKit
 
-class SectionCollectionViewController: UIViewController {
+class SectionCollectionViewController: UIViewController , UICollectionViewDataSource, UICollectionViewDelegate{
 
+    var sections:[Section] = SectionModel().GetSections()
     
-    var images:[String] = []
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -37,30 +37,52 @@ class SectionCollectionViewController: UIViewController {
     //DataSource
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
        // return images.count
-        return 4
+        return sections.count
     }
 
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        //SectionCollectionViewCell
-        
         let mycell:SectionCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "myCell", for: indexPath) as! SectionCollectionViewCell
-//        
-//        let image = mycell.sectionImageView
-//        image?.image = #imageLiteral(resourceName: "thumbnail")
-//        
+        mycell.sectionImageView.image  = UIImage(named: sections[indexPath.row].name)
         return mycell
     }
     
     
     //Delegate
-    func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
-     
+    // Value To be Passed
+   // var valueToPass:String!
+    var selectedSectionQuery:String!
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    
+                print("You selected cell #\(indexPath.item)")
         
+                print("The Query for this cell #\(sections[indexPath.row].name)")
+        
+      //  valueToPass = selectedPlace.name
+        selectedSectionQuery = sections[indexPath.row].query
+        performSegue(withIdentifier: "SectionSeque", sender: self)
     }
     
     
-    
+    //Seque
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if (segue.identifier == "SectionSeque"){
+            
+            //intialize new view controller and cast it as your view controller
+            var testViewController = segue.destination as! EpisodesTableViewController
+            
+            testViewController.sectionPassed = selectedSectionQuery
+            
+            //your new view controller should have the property that will store passed value
+            
+            
+        }
+        
+        
+        
+    }
     
 }

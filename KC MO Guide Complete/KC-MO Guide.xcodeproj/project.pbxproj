@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		411FAA6B1DAD690500185383 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411FAA6A1DAD690500185383 /* Section.swift */; };
 		4144E48C1DABF8D000F0EFC2 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523CABB11CB1858A0074B41E /* NetworkService.swift */; };
 		4144E48D1DABF8D000F0EFC2 /* Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C21C41DA9823500417AFE /* Results.swift */; };
 		4144E48E1DABF8D000F0EFC2 /* Opening_hours.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C21B31DA981EB00417AFE /* Opening_hours.swift */; };
@@ -43,6 +44,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		411FAA6A1DAD690500185383 /* Section.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
 		412C21A91DA9812900417AFE /* DetailJson4Swift_Base.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailJson4Swift_Base.swift; sourceTree = "<group>"; };
 		412C21AB1DA9813D00417AFE /* DetailPhotos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailPhotos.swift; sourceTree = "<group>"; };
 		412C21AD1DA9815000417AFE /* DetailResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailResult.swift; sourceTree = "<group>"; };
@@ -91,6 +93,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		411FAA691DAD687F00185383 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				411FAA6A1DAD690500185383 /* Section.swift */,
+			);
+			name = Entity;
+			sourceTree = "<group>";
+		};
 		412C21CF1DA9852D00417AFE /* Entity */ = {
 			isa = PBXGroup;
 			children = (
@@ -198,6 +208,7 @@
 		523CABB91CB19BEB0074B41E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				411FAA691DAD687F00185383 /* Entity */,
 				416703261DA6D71E00EF152A /* GooglePlace */,
 				52B073B81CB438B500B2FBD3 /* DucBlog.json */,
 				523CABA91CB178CA0074B41E /* Episode.swift */,
@@ -288,6 +299,7 @@
 				4144E4941DABF8D000F0EFC2 /* DetailResult.swift in Sources */,
 				4144E4951DABF8D000F0EFC2 /* Periods.swift in Sources */,
 				4144E4961DABF8D000F0EFC2 /* Json4Swift_Base.swift in Sources */,
+				411FAA6B1DAD690500185383 /* Section.swift in Sources */,
 				4144E4971DABF8D000F0EFC2 /* EpisodeTableViewCell.swift in Sources */,
 				4144E4981DABF8D000F0EFC2 /* EpisodeBackUpTableViewCell.swift in Sources */,
 				4144E4991DABF8D000F0EFC2 /* EpisodesTableViewController.swift in Sources */,

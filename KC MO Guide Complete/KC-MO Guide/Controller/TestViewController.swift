@@ -16,7 +16,7 @@ class TestViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        Test.text = testPassed
+     // Test.text = testPassed
     }
 
     override func didReceiveMemoryWarning() {

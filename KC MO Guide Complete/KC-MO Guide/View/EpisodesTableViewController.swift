@@ -14,14 +14,21 @@ class EpisodesTableViewController: UITableViewController
     var episodes = [Episode]()
     var places = [Place]()
     
+    var testPassed: String = ""
+    var sectionPassed : String = ""
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
         
+        // Do any additional setup after loading the view.
+      //  Test.text = testPassed
+        
+        
         episodes = Episode.downloadAllEpisodes()
        // Episode.ListPlay()
       //  Episode.DetailPlay()
-        places = Place.DownloadAllPlaces(type: "bakery")
+        places = Place.DownloadAllPlaces(type: sectionPassed)
         for place in places
         {
             print("--Name \(place.name)")
