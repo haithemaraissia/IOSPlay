@@ -25,6 +25,9 @@ class TestViewController: UIViewController {
     }
     
 
+    @IBAction func FaceBookButton(_ sender: AnyObject) {
+        UIApplication.shared.openURL(NSURL(string: "http://www.google.com") as! URL)
+    }
     /*
     // MARK: - Navigation
 
