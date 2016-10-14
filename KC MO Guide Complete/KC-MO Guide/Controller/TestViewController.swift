@@ -19,15 +19,17 @@ class TestViewController: UIViewController {
      // Test.text = testPassed
     }
 
+    @IBAction func faceBookButton(_ sender: AnyObject) {
+        UIApplication.shared.openURL(NSURL(string: "http://www.google.com") as! URL)    }
+    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
 
-    @IBAction func FaceBookButton(_ sender: AnyObject) {
-        UIApplication.shared.openURL(NSURL(string: "http://www.google.com") as! URL)
-    }
+
     /*
     // MARK: - Navigation
 
