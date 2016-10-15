@@ -11,7 +11,7 @@ import SafariServices
 
 class EpisodesTableViewController: UITableViewController
 {
-    var episodes = [Episode]()
+
     var places = [Place]()
     
     var testPassed: String = ""
@@ -25,7 +25,7 @@ class EpisodesTableViewController: UITableViewController
       //  Test.text = testPassed
         
         
-        episodes = Episode.downloadAllEpisodes()
+       // episodes = Episode.downloadAllEpisodes()
        // Episode.ListPlay()
       //  Episode.DetailPlay()
         places = Place.DownloadAllPlaces(type: sectionPassed)
@@ -91,7 +91,7 @@ class EpisodesTableViewController: UITableViewController
 //        
         
         valueToPass = selectedPlace.name
-        performSegue(withIdentifier: "SequeTest", sender: self)
+        performSegue(withIdentifier: "LocationDetailSegue", sender: self)
     }
     
     

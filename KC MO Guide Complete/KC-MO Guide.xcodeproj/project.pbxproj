@@ -34,7 +34,6 @@
 		4144E4A31DABF8D000F0EFC2 /* DetailJson4Swift_Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C21A91DA9812900417AFE /* DetailJson4Swift_Base.swift */; };
 		4144E4A41DABF8D000F0EFC2 /* Address_components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C21AF1DA981EB00417AFE /* Address_components.swift */; };
 		4144E4A51DABF8D000F0EFC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523CAB971CB178890074B41E /* AppDelegate.swift */; };
-		4144E4A81DABF8D000F0EFC2 /* DucBlog.json in Resources */ = {isa = PBXBuildFile; fileRef = 52B073B81CB438B500B2FBD3 /* DucBlog.json */; };
 		4144E4A91DABF8D000F0EFC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 523CABA01CB178890074B41E /* LaunchScreen.storyboard */; };
 		4144E4AA1DABF8D000F0EFC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 523CAB9E1CB178890074B41E /* Assets.xcassets */; };
 		4144E4AB1DABF8D000F0EFC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 523CAB9B1CB178890074B41E /* Main.storyboard */; };
@@ -79,7 +78,6 @@
 		523CABAD1CB184390074B41E /* EpisodeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EpisodeTableViewCell.swift; path = Controller/EpisodeTableViewCell.swift; sourceTree = "<group>"; };
 		523CABAF1CB1847D0074B41E /* EpisodesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EpisodesTableViewController.swift; path = ../View/EpisodesTableViewController.swift; sourceTree = "<group>"; };
 		523CABB11CB1858A0074B41E /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
-		52B073B81CB438B500B2FBD3 /* DucBlog.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DucBlog.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,7 +208,6 @@
 			children = (
 				411FAA691DAD687F00185383 /* Entity */,
 				416703261DA6D71E00EF152A /* GooglePlace */,
-				52B073B81CB438B500B2FBD3 /* DucBlog.json */,
 				523CABA91CB178CA0074B41E /* Episode.swift */,
 				523CABB11CB1858A0074B41E /* NetworkService.swift */,
 			);
@@ -273,7 +270,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4144E4A81DABF8D000F0EFC2 /* DucBlog.json in Resources */,
 				4144E4A91DABF8D000F0EFC2 /* LaunchScreen.storyboard in Resources */,
 				4144E4AA1DABF8D000F0EFC2 /* Assets.xcassets in Resources */,
 				4144E4AB1DABF8D000F0EFC2 /* Main.storyboard in Resources */,

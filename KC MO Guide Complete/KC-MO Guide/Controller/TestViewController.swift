@@ -49,15 +49,11 @@ class TestViewController: UIViewController {
         TitleLabel?.text = "This is Title"
         AddressLabel?.text = "This is address"
         PhoneLabel?.text = "(913) 406 0298"
-        FaceBookButtonLabel.setTitle("This is facebookTitle", for: UIControlState.normal)
-//        
-//        FaceBookButtonLabel.titleLabel?.text = "Test"
-        
-        
+       FaceBookButtonLabel.setTitle("This is facebookTitle", for: UIControlState.normal)
+
 //        MainPhoto.image  = UIImage(named: sections[indexPath.row].name)
 
-        
-        MainPhoto.image = UIImage( named: "noimage-1")
+       MainPhoto.image = UIImage( named: "noimage-1")
 
     }
 
