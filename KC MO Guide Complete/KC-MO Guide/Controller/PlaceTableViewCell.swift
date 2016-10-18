@@ -19,36 +19,22 @@ class PlaceTableViewCell: UITableViewCell
 
     func updateUI()
     {
-        
-        
-        
-        //{
-//            var count: Int?
-//            var name: String?
-//            var placeId: String?
-//            var vicinity: String?
-//            var thumbnailURL: URL?
-            
-            
         titleLabel.text = place.name
-        authorImageView.image = UIImage(named: "duc")
         descriptionLabel.text = place.vicinity
-createdAtLabel.text = ""
-        //  createdAtLabel.text = String(describing: place.count)
-        
+        createdAtLabel.text = ""
         let thumbnailURL = place.thumbnailURL
         let networkService = NetworkService(url: thumbnailURL!)
         networkService.downloadImage { (imageData) in
             let image = UIImage(data: imageData as Data)
             DispatchQueue.main.async(execute: {
                 self.thumbnailImageView.image = image
+                self.authorImageView.image = image
+                self.authorImageView.layer.cornerRadius = self.authorImageView.bounds.width / 2.0
+                self.authorImageView.layer.masksToBounds = true
+                self.authorImageView.layer.borderColor = UIColor.white.cgColor
+                self.authorImageView.layer.borderWidth = 1.0
             })
         }
-        
-        authorImageView.layer.cornerRadius = authorImageView.bounds.width / 2.0
-        authorImageView.layer.masksToBounds = true
-        authorImageView.layer.borderColor = UIColor.white.cgColor
-        authorImageView.layer.borderWidth = 1.0
     }
     
     @IBOutlet weak var thumbnailImageView: UIImageView!

@@ -10,8 +10,6 @@ import UIKit
 
 class SectionCollectionViewCell: UICollectionViewCell {
     
-
     @IBOutlet weak var sectionImageView: UIImageView!
-   
-  //  @IBOutlet weak var Image: UIImageView!
+
 }
