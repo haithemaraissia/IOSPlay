@@ -69,17 +69,17 @@
         <!--Places List-->
         <scene sceneID="6pi-pw-upV">
             <objects>
-                <tableViewController storyboardIdentifier="PlaceList" title="Places List" id="PeE-FR-g7w" customClass="EpisodesTableViewController" customModule="KC_MO_Guide" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="PlaceList" title="Places List" id="PeE-FR-g7w" customClass="PlaceTableViewController" customModule="KC_MO_Guide" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="106" sectionHeaderHeight="28" sectionFooterHeight="28" id="jY6-fk-dOs">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Episode Cell" rowHeight="111" id="qyY-lM-BrB" customClass="EpisodeTableViewCell" customModule="KC_MO_Guide" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Place Cell" rowHeight="111" id="qyY-lM-BrB" customClass="PlaceTableViewCell" customModule="KC_MO_Guide" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="92" width="375" height="111"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qyY-lM-BrB" id="Lf7-V3-IRA">
-                                    <frame key="frameInset" width="375" height="111"/>
+                                    <frame key="frameInset" width="375" height="110"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" misplaced="YES" text="57-61: Introduction to 3D Touch" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sm8-Gu-sFe">
@@ -155,7 +155,7 @@
                             <outlet property="delegate" destination="PeE-FR-g7w" id="Gak-hj-IaJ"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="DucTran.io" id="Sbq-BM-T1d">
+                    <navigationItem key="navigationItem" title="KcMo Guide" id="Sbq-BM-T1d">
                         <barButtonItem key="rightBarButtonItem" systemItem="bookmarks" id="pmk-46-3BO">
                             <connections>
                                 <action selector="fullBlogDidTap:" destination="PeE-FR-g7w" id="KYP-r8-QRH"/>
@@ -300,7 +300,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dE7-9G-ZH5" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="zf1-ap-zrW">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zf1-ap-zrW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -313,7 +313,6 @@
             </objects>
             <point key="canvasLocation" x="-452" y="1221.1394302848576"/>
         </scene>
-        <!--Location Detail-->
     </scenes>
     <resources>
         <image name="MurrayIceCream" width="213" height="160"/>

@@ -2,7 +2,7 @@
 //  Section.swift
 //  KC-MO Guide
 //
-//  Created by user122109 on 10/11/16.
+//  Created by Haithem Araissia on 10/11/16.
 //  Copyright © 2016 Haithem Araissia. All rights reserved.
 //
 
@@ -70,9 +70,3 @@ class SectionModel {
     }
     
 }
-
- 
-
-
-
-

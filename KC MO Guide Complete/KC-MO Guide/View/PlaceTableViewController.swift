@@ -9,7 +9,7 @@
 import UIKit
 import SafariServices
 
-class EpisodesTableViewController: UITableViewController
+class PlaceTableViewController: UITableViewController
 {
 
     var places = [Place]()
@@ -24,11 +24,10 @@ class EpisodesTableViewController: UITableViewController
         // Do any additional setup after loading the view.
       //  Test.text = testPassed
         
+
+        let location = Place()
         
-       // episodes = Episode.downloadAllEpisodes()
-       // Episode.ListPlay()
-      //  Episode.DetailPlay()
-        places = Place.DownloadAllPlaces(type: sectionPassed)
+        places = location.DownloadAllPlaces(type: sectionPassed)
         for place in places
         {
             print("--Name \(place.name)")
@@ -64,10 +63,11 @@ class EpisodesTableViewController: UITableViewController
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Episode Cell", for: indexPath) as! EpisodeTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Place Cell", for: indexPath) as! PlaceTableViewCell
         let place = self.places[(indexPath as NSIndexPath).row]
         
         cell.place = place
+    
 
         return cell
     }
@@ -118,7 +118,7 @@ class EpisodesTableViewController: UITableViewController
         if (segue.identifier == "SequeTest"){
             
             //intialize new view controller and cast it as your view controller
-            var testViewController = segue.destination as! TestViewController
+            let testViewController = segue.destination as! TestViewController
             
             testViewController.testPassed = valueToPass
             
@@ -137,7 +137,7 @@ class EpisodesTableViewController: UITableViewController
     
 }
 
-extension EpisodesTableViewController : SFSafariViewControllerDelegate
+extension PlaceTableViewController : SFSafariViewControllerDelegate
 {
     func safariViewControllerDidFinish(_ controller: SFSafariViewController) {
         controller.dismiss(animated: true, completion: nil)

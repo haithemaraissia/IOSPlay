@@ -2,7 +2,7 @@
 //  SectionCollectionViewController.swift
 //  KC-MO Guide
 //
-//  Created by user122109 on 10/10/16.
+//  Created by Haithem Araissia on 10/10/16.
 //  Copyright © 2016 Developers Academy. All rights reserved.
 //
 
@@ -14,13 +14,10 @@ class SectionCollectionViewController: UIViewController , UICollectionViewDataSo
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
 
@@ -36,7 +33,6 @@ class SectionCollectionViewController: UIViewController , UICollectionViewDataSo
     
     //DataSource
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-       // return images.count
         return sections.count
     }
 
@@ -72,7 +68,7 @@ class SectionCollectionViewController: UIViewController , UICollectionViewDataSo
         if (segue.identifier == "SectionSeque"){
             
             //intialize new view controller and cast it as your view controller
-            var testViewController = segue.destination as! EpisodesTableViewController
+            let testViewController = segue.destination as! PlaceTableViewController
             
             testViewController.sectionPassed = selectedSectionQuery
             

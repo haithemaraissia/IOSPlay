@@ -1,9 +1,9 @@
 //
 //  NetworkService.swift
-//  Duc Blog
+//  KC-MO Guide
 //
-//  Created by Duc Tran on 4/3/16.
-//  Copyright © 2016 Developers Academy. All rights reserved.
+//  Created by Haithem Araissia on 10/11/16.
+//  Copyright © 2016 Haithem Araissia. All rights reserved.
 //
 
 import Foundation
@@ -12,7 +12,6 @@ class NetworkService
 {
     lazy var configuration: URLSessionConfiguration = URLSessionConfiguration.default
     lazy var session: URLSession = URLSession(configuration: self.configuration)
-    
     let url: URL
     
     init(url: URL) {
@@ -25,7 +24,6 @@ class NetworkService
     {
         let request = URLRequest(url: self.url)
         let dataTask = session.dataTask(with: request, completionHandler: { (data, response, error) in
-            
             if error == nil {
                 if let httpResponse = response as? HTTPURLResponse {
                     switch (httpResponse.statusCode) {
@@ -41,8 +39,7 @@ class NetworkService
             } else {
                 print("Error: \(error?.localizedDescription)")
             }
-        }) 
-        
+        })
         dataTask.resume()
     }
 }
@@ -54,33 +51,11 @@ extension NetworkService
         if let data = jsonData {
             do {
                 let jsonDictionary = try JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions.mutableContainers) as? [String : AnyObject]
-                return jsonDictionary
-                
+                return jsonDictionary            
             } catch let error as NSError {
                 print("error processing json data: \(error.localizedDescription)")
             }
         }
-        
         return nil
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
