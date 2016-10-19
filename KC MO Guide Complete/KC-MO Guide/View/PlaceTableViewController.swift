@@ -1,55 +1,39 @@
 //
-//  EpisodesTableViewController.swift
-//  Duc Blog
+//  PlaceTableViewController.swift
+//  KC-MO Guide
 //
-//  Created by Duc Tran on 4/3/16.
-//  Copyright © 2016 Developers Academy. All rights reserved.
+//  Created by Haithem Araissia on 10/10/16.
+//  Copyright © 2016 Haithem Araissia. All rights reserved.
 //
 
 import UIKit
-import SafariServices
 
 class PlaceTableViewController: UITableViewController
 {
 
     var places = [Place]()
-    
-    var testPassed: String = ""
     var sectionPassed : String = ""
+    var placeIdToBePassed: String!
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
-      //  Test.text = testPassed
-        
-
+        loadPlaces()
+    }
+    
+    func loadPlaces()
+    {
         let location = Place()
-        
         places = location.DownloadAllPlaces(type: sectionPassed)
-        for place in places
-        {
-            print("--Name \(place.name)")
-            print("Place Id \(place.placeId)")
-            print("Vicinity \(place.vicinity)")
-            print("Vicinity \(place.thumbnailURL?.absoluteString)")
-        }
-        
-        
         self.tableView.reloadData()
-        
         tableView.estimatedRowHeight = tableView.rowHeight
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.separatorStyle = .none
-        
     }
     
     override var preferredStatusBarStyle : UIStatusBarStyle {
         return .lightContent
     }
-
-    // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int
     {
@@ -65,97 +49,22 @@ class PlaceTableViewController: UITableViewController
     {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Place Cell", for: indexPath) as! PlaceTableViewCell
         let place = self.places[(indexPath as NSIndexPath).row]
-        
         cell.place = place
-    
-
         return cell
     }
     
-    
-    // Value To be Passed
-    var valueToPass:String!
-    
-    // MARK: - UITableViewDelegate
-    
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath:
-        IndexPath)
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
     {
         let selectedPlace = self.places[(indexPath as NSIndexPath).row]
-//        
-//        // import SafariServices
-//        let safariVC = SFSafariViewController(url: URL(string: "https://maps.google.com/?cid=8705674934556788176")!)
-//        safariVC.view.tintColor = UIColor(red: 248/255.0, green: 47/255.0, blue: 38/255.0, alpha: 1.0)
-//        safariVC.delegate = self
-//        self.present(safariVC, animated: true, completion: nil)
-//        
-        
-        valueToPass = selectedPlace.name
+        placeIdToBePassed = selectedPlace.placeId
         performSegue(withIdentifier: "LocationDetailSegue", sender: self)
     }
     
-    
-    
-    
-    // MARK: - Target / Action
-    
-    @IBAction func fullBlogDidTap(_ sender: AnyObject)
-    {
-        // import SafariServices
-      //  let safariVC = SFSafariViewController(url: URL(string: "http://www.ductran.io/blog")!)
-        let safariVC = SFSafariViewController(url: URL(string: "https://maps.google.com/?cid=8705674934556788176")!)
-
-        safariVC.view.tintColor = UIColor(red: 248/255.0, green: 47/255.0, blue: 38/255.0, alpha: 1.0)
-        safariVC.delegate = self
-        self.present(safariVC, animated: true, completion: nil)
-    }
-    
-    
-    
-    //Seque
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
        
-        if (segue.identifier == "SequeTest"){
-            
-            //intialize new view controller and cast it as your view controller
-            let testViewController = segue.destination as! TestViewController
-            
-            testViewController.testPassed = valueToPass
-            
-            //your new view controller should have the property that will store passed value 
-            
-            
+        if (segue.identifier == "LocationDetailSegue"){
+            let locationDetailViewController = segue.destination as! LocationDetailViewController
+            locationDetailViewController.placeIdPassed = placeIdToBePassed
         }
-        
-        
-        
-    }
-  
-    
-    
-    
-    
-}
-
-extension PlaceTableViewController : SFSafariViewControllerDelegate
-{
-    func safariViewControllerDidFinish(_ controller: SFSafariViewController) {
-        controller.dismiss(animated: true, completion: nil)
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="SGm-0p-T83">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="fME-Nm-elY">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -9,7 +9,7 @@
         <!--Section List-->
         <scene sceneID="ZeI-HR-ztb">
             <objects>
-                <viewController title="Section List" id="SGm-0p-T83" customClass="SectionCollectionViewController" customModule="KC_MO_Guide" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SectionList" title="Section List" id="SGm-0p-T83" customClass="SectionCollectionViewController" customModule="KC_MO_Guide" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="UgA-HU-v5d"/>
                         <viewControllerLayoutGuide type="bottom" id="8Mr-AQ-3xa"/>
@@ -59,12 +59,12 @@
                     </view>
                     <navigationItem key="navigationItem" id="wM6-Qx-ZDU"/>
                     <connections>
-                        <segue destination="PeE-FR-g7w" kind="show" identifier="SectionSeque" id="Koz-Y1-WzB"/>
+                        <segue destination="PeE-FR-g7w" kind="show" identifier="SectionSegue" id="Koz-Y1-WzB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="INy-Vi-3Pq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="487.19999999999999" y="1221.1394302848576"/>
+            <point key="canvasLocation" x="1530" y="1220.2398800599701"/>
         </scene>
         <!--Places List-->
         <scene sceneID="6pi-pw-upV">
@@ -169,7 +169,7 @@
         <!--Location Detail-->
         <scene sceneID="3tA-bB-Aqx">
             <objects>
-                <viewController storyboardIdentifier="DesignTest" title="Location Detail" useStoryboardIdentifierAsRestorationIdentifier="YES" id="xl8-sI-uNd" customClass="TestViewController" customModule="KC_MO_Guide" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LocationDetail" title="Location Detail" useStoryboardIdentifierAsRestorationIdentifier="YES" id="xl8-sI-uNd" customClass="LocationDetailViewController" customModule="KC_MO_Guide" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wyU-ry-gpe"/>
                         <viewControllerLayoutGuide type="bottom" id="Ezg-GL-TMt"/>
@@ -182,7 +182,7 @@
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="gD4-7W-R6M">
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Murray's Ice Creams &amp; Cookies" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MhK-9a-yAD">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Murray's Ice Creams &amp; Cookies" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MhK-9a-yAD">
                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
                                                 <color key="textColor" red="0.043123853980000001" green="0.45491987480000001" blue="0.64584014720000005" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -196,7 +196,7 @@
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="POg-nw-MBl">
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z77-zG-Fev">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" layoutMarginsFollowReadableWidth="YES" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="3" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z77-zG-Fev">
                                                 <attributedString key="attributedText">
                                                     <fragment content="4120 Pennsylvania Ave, Kansas City, MO 64111 United States">
                                                         <attributes>
@@ -215,6 +215,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JMd-Aw-Hqc">
                                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                                 <state key="normal" title="Direction"/>
+                                                <connections>
+                                                    <action selector="DirectionButtonClick:" destination="xl8-sI-uNd" eventType="touchUpInside" id="nAO-2e-PSD"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -255,6 +258,7 @@
                         <outlet property="MainPhoto" destination="7Ny-BS-vsk" id="VD3-R7-6B2"/>
                         <outlet property="PhoneLabel" destination="i4s-b4-Sks" id="hLq-ra-7bQ"/>
                         <outlet property="TitleLabel" destination="MhK-9a-yAD" id="j7p-mn-0Q1"/>
+                        <segue destination="bAd-wq-00P" kind="show" identifier="MapKitSegue" id="wZ3-oa-HCA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vJ6-UJ-GDk" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -264,7 +268,7 @@
         <!--MapKitViewController-->
         <scene sceneID="39w-3U-lDJ">
             <objects>
-                <viewController storyboardIdentifier="MapKit" title="MapKitViewController" id="bAd-wq-00P" customClass="TestViewController" customModule="KC_MO_Guide" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MapKit" title="MapKitViewController" id="bAd-wq-00P" customClass="MapKitViewController" customModule="KC_MO_Guide" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="eey-Gt-lbV"/>
                         <viewControllerLayoutGuide type="bottom" id="cUE-S8-hsp"/>
@@ -274,7 +278,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label Content over herer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z5e-mU-udw">
-                                <frame key="frameInset" minX="161" minY="156" width="190" height="21"/>
+                                <frame key="frameInset" minX="100" minY="156" width="190" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -284,30 +288,30 @@
                         <color key="backgroundColor" red="0.59695344490000002" green="0.69045403750000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
-                        <outlet property="Test" destination="Z5e-mU-udw" id="UvZ-hZ-pqG"/>
+                        <outlet property="Test" destination="Z5e-mU-udw" id="dB6-f7-clI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xuc-oB-Soz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1750" y="1225"/>
+            <point key="canvasLocation" x="2688.8000000000002" y="1224.737631184408"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="4k1-59-I1L">
+        <scene sceneID="oeg-qN-bBa">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dE7-9G-ZH5" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fME-Nm-elY" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zf1-ap-zrW">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Z5r-Cm-DHK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="SGm-0p-T83" kind="relationship" relationship="rootViewController" id="D8G-yy-V5P"/>
+                        <segue destination="SGm-0p-T83" kind="relationship" relationship="rootViewController" id="ZJs-c8-HlA"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0iY-Ws-poi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t9L-ik-o99" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-452" y="1221.1394302848576"/>
+            <point key="canvasLocation" x="487.19999999999999" y="1220.2398800599701"/>
         </scene>
     </scenes>
     <resources>

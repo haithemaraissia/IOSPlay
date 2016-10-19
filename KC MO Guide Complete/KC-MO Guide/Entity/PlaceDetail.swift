@@ -49,7 +49,7 @@ class PlaceDetail
             {
                 if  (currentLocation?.photos?.count)! > 0
                 {
-                    photo = GetPlaceDetailPhoto(dimension: "350", reference: (currentLocation?.photos?[0].photo_reference)!)
+                    photo = GetPlaceDetailPhoto(dimension: "375", reference: (currentLocation?.photos?[0].photo_reference)!)
                 }
             }
             else
@@ -57,13 +57,18 @@ class PlaceDetail
                 photo = (currentLocation?.icon!)!
             }
             
+            var website = ""
+            if currentLocation?.website != nil
+            {
+                website = (currentLocation?.website)!
+            }
             let currentPlaceDetail = PlaceDetail(
                 name: currentLocation!.name!,
                 placeId: currentLocation!.place_id!,
                 formatted_address: currentLocation!.formatted_address!,
-                formatted_phone_number: currentLocation!.formatted_phone_number!,
+                formatted_phone_number: (currentLocation?.formatted_phone_number!)!,
                 directionUrl: currentLocation!.url!,
-                website: currentLocation!.website!,
+                website: website,
                 thumbnailURL: URL(string:photo)!
             )
             return currentPlaceDetail
