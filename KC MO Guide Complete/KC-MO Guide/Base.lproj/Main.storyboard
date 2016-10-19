@@ -19,10 +19,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Abf-yi-5dO">
-                                <frame key="frameInset" minY="55" width="375" height="612"/>
+                                <frame key="frameInset" minY="25" width="375" height="641"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.85558473769999999" green="0.91884816749999998" blue="0.86471555730000005" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="tintColor" red="0.85558473773183219" green="0.91884816753926701" blue="0.86471555725897331" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <inset key="scrollIndicatorInsets" minX="0.0" minY="23" maxX="0.0" maxY="0.0"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="UW6-TX-d7b">
                                     <size key="itemSize" width="107" height="100"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -57,7 +57,9 @@
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                         <color key="tintColor" red="0.59695344490000002" green="0.69045403750000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="wM6-Qx-ZDU"/>
+                    <navigationItem key="navigationItem" title="KC-MO Guide" id="wM6-Qx-ZDU">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="oXH-yM-cqm"/>
+                    </navigationItem>
                     <connections>
                         <segue destination="PeE-FR-g7w" kind="show" identifier="SectionSegue" id="Koz-Y1-WzB"/>
                     </connections>
@@ -151,12 +153,8 @@
                             <outlet property="delegate" destination="PeE-FR-g7w" id="Gak-hj-IaJ"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="KcMo Guide" id="Sbq-BM-T1d">
-                        <barButtonItem key="rightBarButtonItem" systemItem="bookmarks" id="pmk-46-3BO">
-                            <connections>
-                                <action selector="fullBlogDidTap:" destination="PeE-FR-g7w" id="KYP-r8-QRH"/>
-                            </connections>
-                        </barButtonItem>
+                    <navigationItem key="navigationItem" title="KC-MO Guide" id="Sbq-BM-T1d">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="kdJ-R5-sya"/>
                     </navigationItem>
                     <connections>
                         <segue destination="xl8-sI-uNd" kind="show" identifier="LocationDetailSegue" id="Vfp-mh-gMw"/>
@@ -166,10 +164,10 @@
             </objects>
             <point key="canvasLocation" x="1155" y="430"/>
         </scene>
-        <!--Location Detail-->
+        <!--KC-MO Guide-->
         <scene sceneID="3tA-bB-Aqx">
             <objects>
-                <viewController storyboardIdentifier="LocationDetail" title="Location Detail" useStoryboardIdentifierAsRestorationIdentifier="YES" id="xl8-sI-uNd" customClass="LocationDetailViewController" customModule="KC_MO_Guide" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LocationDetail" useStoryboardIdentifierAsRestorationIdentifier="YES" id="xl8-sI-uNd" customClass="LocationDetailViewController" customModule="KC_MO_Guide" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wyU-ry-gpe"/>
                         <viewControllerLayoutGuide type="bottom" id="Ezg-GL-TMt"/>
@@ -214,7 +212,9 @@
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="direction" translatesAutoresizingMaskIntoConstraints="NO" id="UFd-9Y-MjE"/>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JMd-Aw-Hqc">
                                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                                <state key="normal" title="Direction"/>
+                                                <state key="normal" title="Direction">
+                                                    <color key="titleColor" red="0.043123853980000001" green="0.45491987480000001" blue="0.64584014720000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="DirectionButtonClick:" destination="xl8-sI-uNd" eventType="touchUpInside" id="nAO-2e-PSD"/>
                                                 </connections>
@@ -252,6 +252,9 @@
                             <constraint firstItem="Ezg-GL-TMt" firstAttribute="top" secondItem="HDW-qm-qMj" secondAttribute="bottom" id="uQh-LA-FyR"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="KC-MO Guide" id="4vL-Ee-RIm">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="9PM-sI-mlX"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="AddressLabel" destination="Z77-zG-Fev" id="yqP-tZ-pIA"/>
                         <outlet property="FaceBookButtonLabel" destination="sXU-gt-bDo" id="qWG-y3-CXn"/>
@@ -285,8 +288,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.59695344490000002" green="0.69045403750000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="KC-MO Guide" id="4IO-yI-mcz">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="o2Y-Wp-bsl"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="Test" destination="Z5e-mU-udw" id="dB6-f7-clI"/>
                     </connections>
@@ -303,6 +309,10 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Z5r-Cm-DHK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.55614220110000001" green="0.73732934719999998" blue="0.777486911" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -322,4 +332,5 @@
         <image name="university" width="128" height="128"/>
         <image name="webicon" width="50" height="50"/>
     </resources>
+    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
 </document>
