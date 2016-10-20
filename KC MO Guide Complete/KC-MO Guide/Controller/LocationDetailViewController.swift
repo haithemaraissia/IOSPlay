@@ -29,7 +29,7 @@ class LocationDetailViewController: UIViewController {
     }
     
     @IBAction func DirectionButtonClick(_ sender: AnyObject) {
-        performSegue(withIdentifier: "MapKitSegue", sender: self)
+        UIApplication.shared.openURL(NSURL(string: placeDetail.directionUrl!) as! URL)
     }
     
     @IBAction func faceBookButton(_ sender: AnyObject)
@@ -66,12 +66,5 @@ class LocationDetailViewController: UIViewController {
                 self.MainPhoto.image = image
             })
          }
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if (segue.identifier == "MapKitSegue"){
-            let mapKitViewController = segue.destination as! MapKitViewController
-            mapKitViewController.placeIdPassed = placeIdPassed
-        }
     }
 }

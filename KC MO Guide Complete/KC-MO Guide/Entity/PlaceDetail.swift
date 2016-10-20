@@ -56,17 +56,21 @@ class PlaceDetail
             {
                 photo = (currentLocation?.icon!)!
             }
-            
             var website = ""
             if currentLocation?.website != nil
             {
                 website = (currentLocation?.website)!
             }
+            var phoneNumber = ""
+            if currentLocation?.formatted_phone_number != nil
+            {
+                phoneNumber = (currentLocation?.formatted_phone_number)!
+            }
             let currentPlaceDetail = PlaceDetail(
                 name: currentLocation!.name!,
                 placeId: currentLocation!.place_id!,
                 formatted_address: currentLocation!.formatted_address!,
-                formatted_phone_number: (currentLocation?.formatted_phone_number!)!,
+                formatted_phone_number: phoneNumber,
                 directionUrl: currentLocation!.url!,
                 website: website,
                 thumbnailURL: URL(string:photo)!

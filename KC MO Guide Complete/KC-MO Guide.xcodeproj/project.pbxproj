@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		41188F501DB6D4220057666B /* MapKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41188F4F1DB6D4220057666B /* MapKitViewController.swift */; };
 		411FAA6B1DAD690500185383 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411FAA6A1DAD690500185383 /* Section.swift */; };
 		4144E48C1DABF8D000F0EFC2 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523CABB11CB1858A0074B41E /* NetworkService.swift */; };
 		4144E48D1DABF8D000F0EFC2 /* Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C21C41DA9823500417AFE /* Results.swift */; };
@@ -42,7 +41,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		41188F4F1DB6D4220057666B /* MapKitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapKitViewController.swift; sourceTree = "<group>"; };
 		411FAA6A1DAD690500185383 /* Section.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
 		412C21A91DA9812900417AFE /* DetailJson4Swift_Base.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailJson4Swift_Base.swift; sourceTree = "<group>"; };
 		412C21AB1DA9813D00417AFE /* DetailPhotos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailPhotos.swift; sourceTree = "<group>"; };
@@ -194,7 +192,6 @@
 				523CABAF1CB1847D0074B41E /* PlaceTableViewController.swift */,
 				412FE0811DABEF6700D74090 /* LocationDetailViewController.swift */,
 				41514A451DAC19730063B73A /* SectionCollectionViewController.swift */,
-				41188F4F1DB6D4220057666B /* MapKitViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -314,7 +311,6 @@
 				4144E4A21DABF8D000F0EFC2 /* Southwest.swift in Sources */,
 				4144E4A31DABF8D000F0EFC2 /* DetailJson4Swift_Base.swift in Sources */,
 				4144E4A41DABF8D000F0EFC2 /* Address_components.swift in Sources */,
-				41188F501DB6D4220057666B /* MapKitViewController.swift in Sources */,
 				41514A441DAC184A0063B73A /* SectionCollectionViewCell.swift in Sources */,
 				4144E4A51DABF8D000F0EFC2 /* AppDelegate.swift in Sources */,
 			);
