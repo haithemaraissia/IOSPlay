@@ -248,6 +248,11 @@
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Developers Academy";
+				TargetAttributes = {
+					4144E48A1DABF8D000F0EFC2 = {
+						DevelopmentTeam = J27423F42D;
+					};
+				};
 			};
 			buildConfigurationList = 523CAB8F1CB178890074B41E /* Build configuration list for PBXProject "KC-MO Guide" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -343,6 +348,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = J27423F42D;
 				INFOPLIST_FILE = "$(SRCROOT)/KC-MO Guide/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "kc-mo-guide.com.haithem-araissia";
@@ -356,6 +362,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = J27423F42D;
 				INFOPLIST_FILE = "$(SRCROOT)/KC-MO Guide/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "kc-mo-guide.com.haithem-araissia";
